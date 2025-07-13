@@ -21,6 +21,5 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lancer les tests
-        run: pytest tests/
-        env:
-          PYTHONPATH: ./src
+        run: |
+          PYTHONPATH=src pytest tests/
